@@ -7,7 +7,7 @@ Also, there is no option to disable it in any mode except "pro video" mode, whic
 So there it is. I've created a small Magisk Module tweak that tune down EIS by around 90%.
 It's perfect for any kind of gimbals users or people that like to post produce their videos without being held by EIS and artificial cropping.
 
-Keep in mind, that it's SYSTEM WIDE MOD, so EIS won't work in ANY APP that is using camera (OnePlus is blocking EIS in 3rd party apps anyway...)
+Keep in mind, that it's SYSTEM WIDE MOD, so EIS will be reduced in EVERY APP that is using camera and is whitelisted in config files (for now mainly Google Camera).
 
 As for now, there are some minor inconveniences, but that's fine for me. I rather have full frame video without zoom than this mess of an camera.
 Super Stable mode is not working, but I am not sure if anybody wanted to use it... It will be fixed in next version though.
