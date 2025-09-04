@@ -32,7 +32,8 @@
             "lv.mcprotector.mcpro24fps",
             "lv.mcprotector.mcpro24fps.red",
             "lv.mcprotector.mcpro24fps.yellow",
-            "com.motioncam.pro"
+            "com.motioncam.pro",
+			"com.google.android.apps.tachyon"
         ],
         "orms_need_observe_third_activity_list": [
             "com.tencent.mm.plugin.voip.ui.VideoActivity",
@@ -54,7 +55,7 @@
             "com.tencent.mm",
             "com.tencent.mobileqq"
         ],
-        "isSkipItsVideoStabilization": true,
+        "isSkipItsVideoStabilization": false,
         "feature_motor_enable": false,
         "feature_aps_enable": true,
         "feature_auth_enable": true,
@@ -74,6 +75,7 @@
         "feature_multicamera_enable": true,
         "feature_syscamera_override_dataspace_enable": true,
         "feature_camerasdk_override_dataspace_enable": true,
+        "feature_lazy_finish_fonfiguration_enable": true,
         "limit_3rd_app_size": [
             "com.mt.mtxx.mtxx.sub.preview",
             "com.benqu.wuta.sub.preview",
@@ -105,7 +107,8 @@
             "com.oplus.camera",
             "android.camera.cts",
             "com.android.cts.verifier",
-            "com.tencent.qqmusic"
+            "com.tencent.qqmusic",
+            "ctrip.english"
         ],
         "disable_camera_shutter_sound_app_list": [
             "com.facebook.orca",
@@ -130,7 +133,7 @@
         ],
         "limitSizeListForCtsPhysical": [
             4096,
-            3072,
+            3072
         ],
         "limitSizeListForCts": [
             4096,
@@ -153,15 +156,20 @@
             1944,
             3280,
             2464,
+            2376,
+            1080,
             2560,
             1440,
             2328,
             1748,
             2160,
             1080,
+            1920, 1440,
             1920,
-            1440,
-            1920,
+            1080,
+            1200,
+            1200,
+            1080,
             1080,
             1600,
             1200,
@@ -188,63 +196,79 @@
             0,
             0
         ],
-        "limitThumbnailSizeListForCts": [
+         "limitThumbnailSizeListForCts": [
+            0,0,
+            176,144,
+            213,160,
+            240,144,
+            256,144,
+            240,160,
+            256,154,
+            246,184,
+            250,188,
+            352,160,
+            240,240,
+            240,274,
+            400,180,
+            320,240,
+            240,354,
+            374,282,
+            240,462,
+            240,562,
+            400,562
+        ],
+        "skipSizeListForVerifier0": [
+            4624, 3472,
+            4608, 3456,
+            3280, 2464,
+            2520, 1080,
+            2376, 1080,
+            1080, 1080,
+            640,480,
+            640,360,
+            480,480,
+            352,288,
+            320,240,
+            176,144
+        ],
+        "skipSizeListForVerifier1": [
+            640,480,
+            640,360,
+            480,480,
+            352,288,
+            320,240,
+            176,144
+        ],
+        "skipSizeListForVerifier2": [
+            4624, 3472,
+            4608, 3456,
+            3280, 2464,
+            2520, 1080,
+            2376, 1080,
+            1080, 1080,
+            640,480,
+            640,360,
+            480,480,
+            352,288,
+            320,240,
+            176,144
+        ],
+        "skipSizeListForVerifier3": [
+            640,480,
+            640,360,
+            480,480,
+            352,288,
+            320,240,
+            176,144
+        ],
+        "limit_Verifier_size_for_different_cameras": true,
+        "limitSizeCameraIdListForCtsVerifier": [
             0,
-            0,
-            176,
-            144,
-            213,
-            160,
-            240,
-            144,
-            256,
-            144,
-            240,
-            160,
-            256,
-            154,
-            246,
-            184,
-            250,
-            188,
-            352,
-            160,
-            240,
-            240,
-            400,
-            180,
-            320,
-            240,
-            374,
-            282
+            1,
+            2,
+            3
         ],
-
-        "limitZoomRangeForCTSv": [
-            0.9, 5.0
-        ],
-
-        "limitVideoStabilizationModesForCTSv": [
-            0, 2
-        ],
-
-        "skipSizeListForCtsVerifier": [
-            1600, 800,
-            1280, 720,
-            800,  400,
-            804,  360,
-            792,  360,
-            640,  360,
-            640,  480,
-            2688, 1512,
-            2560, 1440,
-            2304, 1296,
-            2048, 1080,
-            480,  270,
-            352,  288,
-            368,  368,
-            320,  240,
-            176,  144
-        ]
+        "min_stream_configurations_count":492
     },
     "org.codeaurora.ims": {
         "isFreeDomEvictionPackge": true,
@@ -255,9 +279,15 @@
     "android": {
         "isFreeDomEvictionPackge": true
     },
+    "com.coloros.ocrscanner": {
+        "isFreeDomEvictionPackge": true
+    },
     "com.tencent.mm": {
         "app_enable_rio": true,
         "supportExplorerCameraMask": 3,
+	"scan_zoom_value": 1.26,
+        "scan_activity_name": "com.tencent.mm.plugin.scanner.ui.BaseScanUI",
+        "app_disable_fb_evict": true,
         "app_disable_fb_activity": [
             "com.tencent.mm.plugin.recordvideo.activity.MMRecordUI"
         ]
@@ -305,6 +335,14 @@
     "com.kufeng.hj.enjoy": {
         "previewSizeForAPI1Height": 1080
     },
+    "com.mysafelock.lock": {
+        "resolutionFilterForNotAddSizeAPI1": [
+            "1136x1134",
+            "1080x1080",
+            "1086x1134",
+            "1024x768"
+        ]
+    },
     "com.gpsmapcamera.geotagginglocationonphoto": {
         "previewSizeForAPI1Width": 1920,
         "previewSizeForAPI1Height": 1080,
@@ -318,6 +356,7 @@
             "640x360"
         ]
     },
+    
     "com.tencent.mobileqq": {
         "app_enable_rio": true
     },
@@ -354,6 +393,14 @@
             "2592x1920"
         ]
     },
+    "com.heytap.reader":{
+        "previewSizeForAPI1Width": 2376,
+        "previewSizeForAPI1Height": 1080,
+        "needLimitFpsForAPI1": true,
+        "resolutionFilterForNotAddSizeAPI1": [
+            "2560x1440"
+        ]
+    },
     "com.twitter.android": {
         "previewSizeForAPI1Width": 1920,
         "previewSizeForAPI1Height": 1080,
@@ -370,9 +417,7 @@
         "maxPreviewHeightForAPI2cameraId0": 1080
     },
     "com.whatsapp": {
-        "needlimitSizeForSurface": true,
-        "limitWidthForSurface": 1920,
-        "limitHeightForSurface": 1080,
+
         "app_enable_rio": true
     },
     "com.tencent.wework": {
@@ -431,6 +476,14 @@
         "minRatioFilterForNotAddSizeAPI1": 177,
         "needLimitFpsForAPI1": true
     },
+    "ctrip.english": {
+        "resolutionFilterForNotAddSizeAPI1": [
+            "2560x1440",
+            "2520x1080",
+            "2376x1080",
+            "1920x1440"
+        ]
+    },
     "android.camera.cts": {
         "resolutionFilterForNotAddSizeAPI1": [
             "4608x3456",
@@ -444,6 +497,8 @@
             "3840x1644",
             "3456x2592",
             "3328x2496",
+            "3280x2464",
+            "3264x2448",
             "3216x1440",
             "2752x2064",
             "2688x1512",

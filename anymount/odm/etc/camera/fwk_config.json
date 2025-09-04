@@ -32,7 +32,8 @@
             "lv.mcprotector.mcpro24fps",
             "lv.mcprotector.mcpro24fps.red",
             "lv.mcprotector.mcpro24fps.yellow",
-            "com.motioncam.pro"
+            "com.motioncam.pro",
+			"com.google.android.apps.tachyon"
         ],
         "orms_need_observe_third_activity_list": [
             "com.tencent.mm.plugin.voip.ui.VideoActivity",
